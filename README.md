@@ -28,4 +28,4 @@ Seguir os passos abaixo para executar o projeto
 Para cadastrar rotas deve-se chamar a URL http://localhost:8090/servicos/adicionaMapa/{origem}/{destino}/{distancia}  
 Para busca de menor caminho cahamr a url  http://localhost:8090//servicos/buscaCaminho/{origem}/{destino}/{autonomia}/{valorCombustivel}
 
-Deve-se informar os parametros entre {}
+Deve-se informar os parametros entre {}.
