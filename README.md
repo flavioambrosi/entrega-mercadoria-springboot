@@ -17,7 +17,12 @@ Foram criados serviços Restfull para a criação de rotas(/servicos/adicionaMap
 
 O projeto foi desenvolvido utilizando Spring Boot e Spring Data utilizando Hibernate como framework de persistencia.
 
-Foi utilizado banco Oracle e segue o arquivo para criação do banco.
+Para facilitar o desenvolvimento, foi utilizado o banco de dados H2 que é baseado em arquivo e fornecido pelo Spring boot.
+Para acessar a base de dados utilize a seguinte URL: http://localhost:8090/console
+Driver Class: org.h2.Driver
+JDBC Url: jdbc:h2:~/testdb
+User name:sa
+Password:sa
 
 Seguir os passos abaixo para executar o projeto
 - Baixar o zip do repositorio
