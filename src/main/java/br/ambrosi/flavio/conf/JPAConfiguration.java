@@ -15,16 +15,16 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import oracle.jdbc.pool.OracleDataSource;
 
-@Configuration
-@EnableTransactionManagement
-@ConfigurationProperties("oracle")
+//@Configuration
+//@EnableTransactionManagement
+//@ConfigurationProperties("oracle")
 public class JPAConfiguration {
 
-	@NotNull
+	//@NotNull
 	private String username;
-	@NotNull
+	//@NotNull
 	private String password;
-	@NotNull
+	//@NotNull
 	private String url;
 
 	public void setUsername(String username) {
@@ -39,7 +39,7 @@ public class JPAConfiguration {
 		this.url = url;
 	}
 
-	@Bean
+	//@Bean
 	DataSource dataSource() throws SQLException {
 		OracleDataSource dataSource = new OracleDataSource();
 		dataSource.setUser(username);
@@ -50,7 +50,7 @@ public class JPAConfiguration {
 		return dataSource;
 	}
 
-	@Bean
+	//@Bean
 	public PlatformTransactionManager transactionManager(EntityManagerFactory emf) {
 		JpaTransactionManager jpaTransactionManager = new JpaTransactionManager();
 		jpaTransactionManager.setEntityManagerFactory(emf);
