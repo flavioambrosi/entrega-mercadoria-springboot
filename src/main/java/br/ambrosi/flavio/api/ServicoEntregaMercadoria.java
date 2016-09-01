@@ -39,7 +39,7 @@ public class ServicoEntregaMercadoria {
 		System.out.println("Carregando os produtos");
 	}
 
-	@RequestMapping(method = RequestMethod.GET, value = "/adicionaMapa/{origem}/{destino}/{distancia}")
+	@RequestMapping(method = RequestMethod.POST, value = "/adicionaMapa/{origem}/{destino}/{distancia}")
 	public void adicionaMapa(@PathVariable("origem") String origem, @PathVariable("destino") String destino, @PathVariable("distancia") Integer distancia) throws MapaCadastradoException {
 
 		// Verifica a existencia do ponto de origem informado

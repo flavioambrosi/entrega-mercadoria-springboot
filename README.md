@@ -34,3 +34,6 @@ Para cadastrar rotas deve-se chamar a URL http://localhost:8090/servicos/adicion
 Para busca de menor caminho cahamr a url  http://localhost:8090//servicos/buscaCaminho/{origem}/{destino}/{autonomia}/{valorCombustivel}
 
 Deve-se informar os parametros entre {}.
+
+Debug:
+java -Xdebug -Xrunjdwp:server=y,transport=dt_socket,address=5005,suspend=n -jar target/entrega-mercadoria-0.0.1-SNAPSHOT.jar
